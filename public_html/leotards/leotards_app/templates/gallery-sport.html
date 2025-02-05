@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid h_full_first px-0 row mx-auto bg-light">
+  {% for img in gallery %}
+  <div class="col-md-6 col-12" style="background: center / cover url('{{ img }}'); min-height: 400px;">
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

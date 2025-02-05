@@ -1,0 +1,252 @@
+@media (max-width: 991px) {
+  .h_full_first {
+    margin-top: 51.2px;
+    min-height: calc(100vh - 51.2px);
+  }
+  .h-full {
+    min-height: calc(100vh);
+  }
+  .full-nfooter {
+    min-height: calc(100vh - 51.2px - 59px);
+  }
+  .img-card {
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 66vw;
+    padding: 0;
+    background-position: center!important;
+    background-size: cover!important;
+  }
+  .sub {
+    background: url('images/sub-sm.png'); 
+    background-size: cover; 
+    background-position: center;
+  }
+  #header {
+    transition: .3s;
+    background: white;
+    position: fixed;
+  }
+  .gale {
+    height: 50vh!important;
+  }
+  .pad {
+    padding-top: 59px;
+  }
+}
+
+@media (min-width: 992px) {
+  .h_full_first {
+    margin-top: 73px;
+    min-height: calc(100vh - 73px);
+  }
+  .h-full {
+    min-height: calc(100vh);
+  }
+  .full-nfooter {
+    min-height: calc(100vh - 73px - 60px);
+  }
+  .h-half-md {
+    min-height: calc(50vh - 73px)!important;
+  }
+  .half-nfooter-md {
+    min-height: calc(50vh - 60px)!important;
+  }
+  .a {
+    min-width: 768px;
+  }
+  .img-card {
+    max-width: 100%;
+    max-height: 100%;
+    min-height: calc(50vh - 36px);
+    padding: 0;
+    background-position: center!important;
+    background-size: cover!important;
+  }
+  .sub {
+    background: url('images/sub.png'); 
+    background-size: cover; 
+    background-position: center;
+  }
+  #header {
+    transition: .3s;
+    background: none;
+    position: fixed;
+    mix-blend-mode: exclusion;
+  }
+  .gale {
+    height: 70vh!important;
+  }
+  .pad {
+    padding-top: 72px;
+  }
+}
+
+
+.slick-slide {
+  margin: 0 1rem;
+}
+
+@font-face {
+  font-family: Dalglish;
+  src: url(z/ZTNeueRalewe-Medium.ttf);
+}
+
+@font-face {
+  font-family: DalglishR;
+  src: url(z/ZTNeueRalewe-Regular.ttf);
+}
+@font-face {
+  font-family: DalglishIt;
+  src: url(z/ZTNeueRalewe-Italic.ttf);
+}
+
+.bg-img {
+  //background: url('images/index/back720.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+body {
+  overflow-x: none;
+  overscroll-behavior: none;
+}
+
+.backdrop {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, .25);
+}
+
+.invis {
+  opacity: 0;
+  transition: .3s;
+  background: none;
+}
+
+.flap {
+  position: relative;
+  line-height: 1;
+  color: white;
+  mix-blend-mode: exclusion;
+  top: -94px;
+}
+
+.invis:hover {
+  opacity: 1;
+  background: rgba(0, 0, 0, .5);
+}
+
+.bg-silver {
+  background: #28262C;
+}
+
+.cormorant {
+  font-family: Dalglish;
+  font-weight: 300;
+  line-height: inherit;
+  letter-spacing: 1px;
+}
+
+.cormorant-reg {
+  font-family: DalglishR;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+
+.cormorant-ita {
+  font-family: DalglishIt;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+
+.bg-eerie {
+  background: #191716;
+}
+
+.active {
+  background: none!important;
+  border-bottom: 1px solid black;
+}
+
+.nav-link {
+  color: white!important;
+}
+
+.card {
+  border: none;
+  background: rgba(30, 32, 35, .5);
+  backdrop-filter: blur(10px);
+}
+
+.title {
+  margin-bottom: 10vh;
+}
+
+.btn-black {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #000;
+  --bs-btn-border-color: #000;
+  --bs-btn-hover-color: rgba(255, 255, 255, .5);
+  --bs-btn-hover-bg: #000;
+  --bs-btn-hover-border-color: #000;
+  --bs-btn-focus-shadow-rgb: 66, 70, 73;
+  --bs-btn-active-color: rgba(255, 255, 255, .5);
+  --bs-btn-active-bg: #000;
+  --bs-btn-active-border-color: #000;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #000;
+  --bs-btn-disabled-bg: #000;
+  --bs-btn-disabled-border-color: #000
+}
+
+.bg-antiflash {
+  background: #EAEDF0;
+}
+
+hr {
+  border-top: 1px solid;
+}
+
+#hvr {
+  transition: .3s;
+}
+
+#hvr:hover {
+  background: #EAEDF0;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.navbar-btn {
+	background: none;
+	border: 1px solid black;
+	padding: 5px 10px 5px 10px;
+	border-right: none;
+	border-left: none;
+}
+
+.border-bottom {
+  border-bottom: 1px solid rgba(0, 0, 0, .5)!important;
+}
+
+.card {
+  max-width: 728px;
+}
+
+.hov {
+  color: black;
+  text-decoration: none;
+}
+
+.hov:hover {
+  color: brown;
+}

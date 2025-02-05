@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid h-full py-5 px-0 row mx-auto bg-light">
+  <div class="ps-5 col-12 col-lg-3 d-flex flex-column">
+    <h1 class="cormorant-reg display-1 mt-4 text-nowrap"><span class="cormorant-ita" style="color: #867aff;">Галерея</span> работ</h1>
+    <div class="h-100"></div>
+    <div class="cormorant-reg">
+      <p><a href="/gallery/acro" class="hov">Спортивная акробатика</a></p>
+      <p><a href="/gallery/gym" class="hov">Воздушная гиманстика</a></p>
+      <p><a href="/gallery/fig" class="hov">Фигурное катание</a></p>
+    </div>
+  </div>
+  <div class="slider align-self-end col-12 col-lg-9 p-0">
+    <div class="gale"
+      style="background: center / cover url('{% static 'images/index/gallery-acro.png' %}'); width: 400px;"></div>
+    <div class="gale"
+      style="background: center / cover url('{% static 'images/index/gallery-gym.jpg' %}'); width: 400px;"></div>
+    <div class="gale"
+      style="background: center / cover url('{% static 'images/index/gallery-fig.jpeg' %}'); width: 400px;"></div>
+  </div>
+</div>
+<script>
+  $('.slider').slick({
+    centerMode: false,
+    slidesToShow: 1,
+    variableWidth: true,
+    arrows: false,
+    infinite: true,
+    responsive: [
+      {
+        breakpoint: 552,
+        settings: {
+          arrows: false,
+          centerMode: false,
+          centerPadding: '0',
+          slidesToShow: 1,
+        }
+      }
+    ]
+  });
+</script>
+{% endblock %}

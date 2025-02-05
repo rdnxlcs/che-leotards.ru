@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid py-5 bg-light">
+<div class="container mt-5 py-5 px-4 d-flex align-items-center">
+  <div class="w-100">
+    <h1 class="cormorant-reg display-2 mb-4">Готовые <span class="cormorant-ita" style="color: #867aff;">уникальные
+        изделия</span></h1>
+    <div class="row">
+      <div class="col-12 col-md-4 mb-4">
+        <p class="mb-0 mb-md-3">Костюмы в продаже</p>
+        <a class="text-muted" href="/contact">Связаться</a>
+      </div>
+      <div class="col-12 col-md-8 text-end text-md-start">
+        <p class="cormorant-reg mb-4">В этом разделе вы найдете уникальные изделия, которые готовы к отправке! Забудьте
+          о долгом ожидании – каждый костюм уже ждет своего нового владельца. Кроме того, у Вас есть возможность
+          примерить костюмы на соревнованиях по спортивной акробатике (подробности уточняйте в личных сообщениях), чтобы
+          убедиться в идеальной посадке и удобстве.</p>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 gx-5 row-cols-lg-3">
+      <div class="col mb-3">
+        <div class="w-100" style="background: center / cover url('{% static 'images/sale/image5.png' %}'); height: 500px;">
+
+        </div>
+        <div class="mt-2">
+          <div class="row">
+            <p class="col-8 cormorant-reg mb-2">Спортивная акробатика</p>
+            <p class="col text-end cormorant-reg mb-2">СмП</p>
+          </div>
+          <h3 class="cormorant-reg mb-1">Гроза</h3>
+          <div class="row">
+            <small class="col">Рост верхней</small>
+            <small class="col text-end">148 - 158</small>
+          </div>
+          <div class="row">
+            <small class="col">Рост нижнего</small>
+            <small class="col text-end">175 - 183</small>
+          </div>
+          <p class="mt-3">85 000 | Комплект</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+{% endblock %}

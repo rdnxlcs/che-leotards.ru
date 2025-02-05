@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid py-5 bg-light">
+<div class="container py-5">
+  <h1 class="cormorant-reg display-2 mb-4"><span class="cormorant-ita" style="color: #867aff;">Дистанционное</span> сотрудничество</h1>
+  <div class="px-4">
+    
+    <div class="row py-4 border-bottom">
+      <div class="col-12 col-md-4 d-flex align-items-center">
+        <h1 class="cormorant-reg mb-4">Обсуждение ТЗ</h1>
+      </div>
+      <div class="col-12 col-md-8 cormorant-reg">
+        <h5 class="">Что потребуется от Вас:</h5>
+        <ul>
+          <li>
+            <h5 class="">Техническое задание</h5>
+          </li>
+          <ul class="mb-3">
+            <li>Основной цвет</li>
+            <li>Дополнительные цвета</li>
+            <li>Конструкция костюма (наличие юбки, рукавов, воротника-стойки и прочее)</li>
+            <li>Узоры (графический узоры, орнаменты, природные мотивы, вензели)</li>
+            <li>Примеры понравившихся костюмов</li>
+          </ul>
+          <li>
+            <h5 class="">Музыка упражнения</h5>
+          </li>
+          <li>
+            <h5 class="">Видео упражнения (желательно)</h5>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row py-4 border-bottom">
+      <div class="col-12 col-md-4  d-flex align-items-center">
+        <h1 class="cormorant-reg mb-4">Эскиз</h1>
+      </div>
+      <div class="col-12 col-md-8 cormorant-reg">
+        <div class="cormorant-reg">
+          <h5 class="">Что потребуется от Вас:</h5>
+          <ul>
+            <li>Фото ребенка в тренировочном или выступалельном купальнике в полный рост (анфас, вид сзади, профиль)
+            </li>
+          </ul>
+          <h5 class="">Что Вы получите:</h5>
+          <ul>
+            <li>Эскиз на модели</li>
+            <li>Эскиз на фото (с возможными правками учитывая особенности фигуры)</li>
+          </ul>
+          <h5 class="">Эскиз на фото</h5>
+          <p>Иногда может потребоваться доработка эскиза на фото, особенно актуально для детей в возрасте до 14 лет.</p>
+        </div>
+        <small class="text-muted">Все конфединциально! Фотографии остаются у меня и не используются в публикациях
+          или где-либо еще. Затем все фото удаляются</small>
+      </div>
+    </div>
+    <div class="row py-4 border-bottom">
+      <div class="col-12 col-md-4 d-flex align-items-center">
+        <h1 class="cormorant-reg mb-4">Cнятие мерок</h1>
+      </div>
+      <div class="col-12 col-md-8 cormorant-reg">
+        <h5 class="">Все костюмы шьются по индивидуальным меркам</h5>
+        <ul>
+          <li>Вы получаете подробную инструкцию по снятию мерок и видеоурок</li>
+          <li>Заполняете приложенную таблицу</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row py-4 border-bottom">
+      <div class="col-12 col-md-4 d-flex align-items-center">
+        <h1 class="cormorant-reg mb-4">Материалы</h1>
+      </div>
+      <div class="col-12 col-md-8 cormorant-reg">
+        <h5 class="">При пошиве используются:</h5>
+        <ul>
+          <li>Только высококачественные ткани производства Италии и Кореи</li>
+          <li>Нитки высокой прочности Gutermann</li>
+          <li>Высококачественные краски по ткани</li>
+        </ul>
+        <h5 class="">Стразы</h5>
+        <ul>
+          <li>Стразы производства Кореи и Китая</li>
+          <li>Стразы производства Европейских брендов (Preciosa, Stellux, Swarovski)</li>
+        </ul>
+      </div>
+      <div class="row row-cols-4 my-3">
+        <a href="https://www.swarovski.com/" class="col"><img src="{% static 'images/conditions/swarowski.png' %}" height="100" style="object-fit: contain; width: 100%;"></a>
+        <a class="col"><img src="{% static 'images/conditions/stellux.png' %}" height="100" style="object-fit: contain; width: 100%;"></a>
+        <a href="https://www.preciosa.com/" class="col"><img src="{% static 'images/conditions/preciosa.png' %}" height="100" style="object-fit: contain; width: 100%;"></a>
+        <a href="http://guetermann.ru/" class="col" ><img src="{% static 'images/conditions/gutermann.png' %}" height="100" style="object-fit: contain; width: 100%;"></a>
+      </div>
+    </div>
+    <div class="row py-4">
+      <div class="col-12 col-md-4 d-flex align-items-center">
+        <h1 class="cormorant-reg mb-4">Отправка заказа</h1>
+      </div>
+      <div class="col-12 col-md-4">
+        <small class="text-secondary">По готовности костюма вы получаете фото и видеоотчет</small>
+        <div class="cormorant-reg mt-3">
+          <h5 class="">Для отправки возможны два варианта:</h5>
+          <ul>
+            <li>Доставка почтовыми службами. Стоимость доставки оплачивается отдельно.</li>
+            <li>Самовывоз</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  {% endblock %}
